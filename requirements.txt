@@ -56,5 +56,4 @@ reportlab
 
 
 pydub
-audioop-lts
 
