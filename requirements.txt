@@ -1,0 +1,60 @@
+# ==============================
+# AI Meeting Assistant
+# Python 3.11 recommended
+# ==============================
+#install dependencies
+
+sarvamai
+# Streamlit UI
+streamlit
+
+# YouTube / audio downloading
+yt-dlp
+
+# Local Whisper transcription
+openai-whisper
+
+# PyTorch - Whisper backend
+torch
+
+# ==============================
+# LangChain / LCEL
+# ==============================
+langchain
+langchain-core
+langchain-community
+langchain-text-splitters
+langchain-google-genai
+langchain-groq
+
+# ==============================
+# RAG / Vector Database
+# ==============================
+chromadb
+langchain-chroma
+
+# HuggingFace embeddings
+sentence-transformers
+langchain-huggingface
+transformers
+
+# ==============================
+# Hindi -> English translation
+# ==============================
+deep-translator
+
+# ==============================
+# Environment variables
+# ==============================
+python-dotenv
+
+# ==============================
+# PDF export
+# ==============================
+reportlab
+
+
+
+pydub
+audioop-lts
+
