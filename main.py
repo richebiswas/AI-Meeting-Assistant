@@ -9,8 +9,26 @@ from core.extractor import extract_action_items, extract_key_decisions, extract_
 from core.rag_engine import build_rag_chain, ask_question
 
 load_dotenv()
-import shutil
-st.write("Deno:", shutil.which("deno"))
+import yt_dlp
+
+
+st.write("Testing YouTube access...")
+
+url = "https://www.youtube.com/watch?v=2oDa-Q8Eqtk"
+
+try:
+    with yt_dlp.YoutubeDL({
+        "format": "bestaudio/best",
+        "quiet": False,
+    }) as ydl:
+        info = ydl.extract_info(url, download=False)
+
+    st.success("YouTube extraction works!")
+    st.write("Title:", info.get("title"))
+    st.write("Format:", info.get("format_id"))
+
+except Exception as e:
+    st.error(f"YouTube extraction failed: {e}")
 
 
 st.set_page_config(page_title="AI Video Assistant", page_icon="🎥", layout="wide")
