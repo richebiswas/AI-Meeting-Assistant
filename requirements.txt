@@ -10,7 +10,7 @@ streamlit
 
 # YouTube / audio downloading
 yt-dlp[default]
-deno
+deno>=2.6.6
 
 # Local Whisper transcription
 openai-whisper

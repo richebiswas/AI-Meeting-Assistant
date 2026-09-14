@@ -1,4 +1,5 @@
 import streamlit as st
+
 from dotenv import load_dotenv
 
 from utils.audio_processor import process_input
@@ -8,6 +9,9 @@ from core.extractor import extract_action_items, extract_key_decisions, extract_
 from core.rag_engine import build_rag_chain, ask_question
 
 load_dotenv()
+import shutil
+st.write("Deno:", shutil.which("deno"))
+
 
 st.set_page_config(page_title="AI Video Assistant", page_icon="🎥", layout="wide")
 
