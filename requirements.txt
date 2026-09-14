@@ -9,7 +9,7 @@ sarvamai
 streamlit
 
 # YouTube / audio downloading
-yt-dlp
+yt-dlp[default]
 
 # Local Whisper transcription
 openai-whisper
