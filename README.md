@@ -51,68 +51,7 @@ The application processes audio, generates a transcript, summarizes the discussi
 
 ## Architecture
 
-```text
-                    ┌──────────────────────┐
-                    │   YouTube URL /      │
-                    │   Local Audio File   │
-                    └──────────┬───────────┘
-                               │
-                               ▼
-                    ┌──────────────────────┐
-                    │   Audio Processing   │
-                    │   yt-dlp + FFmpeg    │
-                    └──────────┬───────────┘
-                               │
-                               ▼
-                    ┌──────────────────────┐
-                    │   Audio Conversion   │
-                    │   Mono + 16 kHz WAV  │
-                    └──────────┬───────────┘
-                               │
-                               ▼
-                    ┌──────────────────────┐
-                    │   Audio Chunking     │
-                    └──────────┬───────────┘
-                               │
-                               ▼
-              ┌─────────────────────────────────┐
-              │       Speech Recognition        │
-              │                                 │
-              │ Whisper       │      Sarvam AI  │
-              │ English       │      Hinglish   │
-              └────────────────┬────────────────┘
-                               │
-                               ▼
-                    ┌──────────────────────┐
-                    │     Transcript       │
-                    └──────────┬───────────┘
-                               │
-             ┌─────────────────┼─────────────────┐
-             │                 │                 │
-             ▼                 ▼                 ▼
-      ┌────────────┐    ┌────────────┐    ┌────────────┐
-      │  Summary   │    │  Actions   │    │ Decisions  │
-      └────────────┘    └────────────┘    └────────────┘
-                               │
-                               ▼
-                    ┌──────────────────────┐
-                    │     RAG Pipeline     │
-                    │                      │
-                    │ HuggingFace         │
-                    │ Embeddings           │
-                    │        ↓             │
-                    │ ChromaDB             │
-                    │        ↓             │
-                    │ Retriever            │
-                    │        ↓             │
-                    │ Groq LLM             │
-                    └──────────┬───────────┘
-                               │
-                               ▼
-                    ┌──────────────────────┐
-                    │   Meeting Q&A        │
-                    └──────────────────────┘
-```
+---
 <img width="1202" height="1725" alt="image" src="https://github.com/user-attachments/assets/ff69f33c-a513-4cd5-9bf7-c85cc90b18c6" />
 
 ---
