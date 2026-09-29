@@ -113,6 +113,7 @@ The application processes audio, generates a transcript, summarizes the discussi
                     │   Meeting Q&A        │
                     └──────────────────────┘
 ```
+<img width="1202" height="1725" alt="image" src="https://github.com/user-attachments/assets/ff69f33c-a513-4cd5-9bf7-c85cc90b18c6" />
 
 ---
 
