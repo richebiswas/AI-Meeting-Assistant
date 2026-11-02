@@ -1,5 +1,12 @@
 # 🎙️ AI Meeting Assistant & Video Agent
 
+## 🎬 Live Demo & Video
+
+- **Live App:** [Try the deployed Streamlit app](https://ai-meeting-assistant-djestw8bn3zjvpfwvspork.streamlit.app/)
+- **Video Walkthrough:** [Watch on YouTube](https://youtu.be/muYl234no_E)
+
+[![Watch the demo](https://img.youtube.com/vi/muYl234no_E/hqdefault.jpg)](https://youtu.be/muYl234no_E)
+
 [![Python](https://img.shields.io/badge/Python-3.10%20%7C%203.11-blue.svg)](https://www.python.org/)
 [![LangChain](https://img.shields.io/badge/Framework-LangChain%20LCEL-green.svg)](https://python.langchain.com/)
 [![Whisper](https://img.shields.io/badge/STT-OpenAI%20Whisper%20%7C%20Sarvam%20AI-orange.svg)](https://github.com/openai/whisper)
@@ -17,6 +24,7 @@ An end-to-end intelligent meeting analysis and retrieval system that processes a
 - [System Architecture](#-system-architecture)
 - [Project Structure](#-project-structure)
 - [Tech Stack](#-tech-stack)
+- - [Live Demo & Video](#-live-demo--video)
 - [Prerequisites](#-prerequisites)
 - [Installation & Setup](#-installation--setup)
 - [Usage](#-usage)
